@@ -186,6 +186,8 @@ Token F1 Score        : 0.5867 (58.7%)  [HIGH F1]
 ### C. System Latency Benchmark (100 Executed Queries)
 Ran `python benchmark/latency_benchmark.py`:
 
+![System Latency Benchmark Screenshot](image%20copy.png)
+
 | Execution Stage | p50 (ms) | p95 (ms) | Average (ms) |
 | :--- | :--- | :--- | :--- |
 | **Embedding Generation** | `26.45 ms` | `88.12 ms` | `32.10 ms` |
