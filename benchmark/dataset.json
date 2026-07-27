@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "What was Acme Corp's total revenue in FY2025?",
+    "expected_answer": "Acme Corporation recorded total gross revenue of $42.5 million in FY2025, representing a 28% year-over-year increase.",
+    "target_document": "financial_report.pdf",
+    "category": "finance"
+  },
+  {
+    "id": 2,
+    "question": "What was the revenue growth percentage from FY2024 to FY2025?",
+    "expected_answer": "Gross revenue increased by 28% year-over-year from $33.2 million in FY2024 to $42.5 million in FY2025.",
+    "target_document": "financial_report.pdf",
+    "category": "finance"
+  },
+  {
+    "id": 3,
+    "question": "What was Acme Corp's gross profit margin in FY2025?",
+    "expected_answer": "Gross profit margin reached 68.2%, up from 62.4% in FY2024.",
+    "target_document": "financial_report.pdf",
+    "category": "finance"
+  },
+  {
+    "id": 4,
+    "question": "How much did Acme Corp spend on vector database infrastructure before optimization?",
+    "expected_answer": "Under managed Pinecone pods, vector storage cost $1,450 per month ($17,400 annually), projecting over $180,000 annually at scale.",
+    "target_document": "financial_report.pdf",
+    "category": "finance"
+  },
+  {
+    "id": 5,
+    "question": "How much annual cost reduction was achieved by switching to Qdrant?",
+    "expected_answer": "Self-hosted Qdrant achieved a net annual cost reduction of $120,000, representing a 91.4% cost savings.",
+    "target_document": "financial_report.pdf",
+    "category": "finance"
+  },
+  {
+    "id": 6,
+    "question": "How much was invested in Research and Development in FY2025?",
+    "expected_answer": "Total R&D expenditure for FY2025 was $8.2 million, representing 19.3% of revenue.",
+    "target_document": "financial_report.pdf",
+    "category": "finance"
+  },
+  {
+    "id": 7,
+    "question": "What is the monthly remote work stipend for Acme Corp employees?",
+    "expected_answer": "Full-time remote employees receive a monthly stipend of $150 for internet, electricity, and utilities.",
+    "target_document": "company_policy.html",
+    "category": "policy"
+  },
+  {
+    "id": 8,
+    "question": "What is the one-time home office equipment setup budget for new hires?",
+    "expected_answer": "New employees receive a one-time setup allowance of $1,200 upon joining for ergonomic equipment.",
+    "target_document": "company_policy.html",
+    "category": "policy"
+  },
+  {
+    "id": 9,
+    "question": "How many annual paid vacation days do employees receive?",
+    "expected_answer": "Full-time employees accrue 22 annual paid vacation days per year.",
+    "target_document": "company_policy.html",
+    "category": "policy"
+  },
+  {
+    "id": 10,
+    "question": "How many dedicated mental health wellness days are provided per year?",
+    "expected_answer": "Employees receive 5 dedicated mental health wellness days per calendar year.",
+    "target_document": "company_policy.html",
+    "category": "policy"
+  },
+  {
+    "id": 11,
+    "question": "What is the annual Learning & Development allowance per technical employee?",
+    "expected_answer": "Technical employees receive an annual L&D grant of $2,500 for conferences and online certifications.",
+    "target_document": "company_policy.html",
+    "category": "policy"
+  },
+  {
+    "id": 12,
+    "question": "What percentage of health insurance premiums is covered for dependents?",
+    "expected_answer": "Coverage for direct dependents and spouses is 80% employer-subsidized.",
+    "target_document": "company_policy.html",
+    "category": "policy"
+  },
+  {
+    "id": 13,
+    "question": "What embedding model and vector dimension does the system use?",
+    "expected_answer": "The system uses BAAI/bge-small-en-v1.5 producing 384-dimensional dense vectors.",
+    "target_document": "architecture_guide.md",
+    "category": "engineering"
+  },
+  {
+    "id": 14,
+    "question": "Which Large Language Model is integrated into the RAG pipeline?",
+    "expected_answer": "The pipeline integrates llama-3.3-70b-versatile via Groq API and Gemini 2.5 Flash.",
+    "target_document": "architecture_guide.md",
+    "category": "engineering"
+  },
+  {
+    "id": 15,
+    "question": "How does the system guarantee zero vector duplication during ingestion?",
+    "expected_answer": "SHA-256 hashes generated from chunk text and metadata map to UUID v5 IDs; existing IDs in Qdrant are checked and skipped.",
+    "target_document": "architecture_guide.md",
+    "category": "engineering"
+  },
+  {
+    "id": 16,
+    "question": "What fields have Qdrant payload indexes established?",
+    "expected_answer": "Payload keyword indexes are established on category, source, and document_name.",
+    "target_document": "architecture_guide.md",
+    "category": "engineering"
+  },
+  {
+    "id": 17,
+    "question": "What is the target p95 latency for vector retrieval?",
+    "expected_answer": "Target p95 vector retrieval latency is less than 10ms.",
+    "target_document": "architecture_guide.md",
+    "category": "engineering"
+  },
+  {
+    "id": 18,
+    "question": "What is the target p95 end-to-end latency for the system?",
+    "expected_answer": "Target total end-to-end system latency is less than 1000ms.",
+    "target_document": "architecture_guide.md",
+    "category": "engineering"
+  },
+  {
+    "id": 19,
+    "question": "What is the stock ticker symbol for Quantum Dynamics Inc?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "target_document": "none",
+    "category": "out_of_scope"
+  },
+  {
+    "id": 20,
+    "question": "Who was the prime minister of Canada in 1995?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "target_document": "none",
+    "category": "out_of_scope"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "num_queries": 100,
+  "embedding_latency_ms": {
+    "p50": 67.97,
+    "p95": 87.72,
+    "avg": 67.04
+  },
+  "retrieval_latency_ms": {
+    "p50": 2.11,
+    "p95": 3.0,
+    "avg": 2.13
+  },
+  "generation_latency_ms": {
+    "p50": 1668.68,
+    "p95": 7084.65,
+    "avg": 3235.94
+  },
+  "total_latency_ms": {
+    "p50": 1742.07,
+    "p95": 7164.01,
+    "avg": 3305.17
+  }
+}

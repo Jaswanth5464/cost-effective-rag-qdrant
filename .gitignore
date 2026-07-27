@@ -1,0 +1,31 @@
+# Environment variables & secrets (CRITICAL FOR SECURITY)
+.env
+*.env
+!.env.example
+
+# Python virtual environment
+venv/
+env/
+ENV/
+.venv
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local Qdrant Storage & Temp Files
+qdrant_storage/
+*.log
+logs/*.log
+!logs/.gitkeep
+
+# Operating system files
+.DS_Store
+Thumbs.db

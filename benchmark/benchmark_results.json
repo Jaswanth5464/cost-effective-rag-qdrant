@@ -1,0 +1,493 @@
+{
+  "summary": {
+    "total_questions": 20,
+    "retrieval_evaluation": {
+      "mean_hit_rate_at_5": 0.9,
+      "mean_recall_at_5": 0.9,
+      "mean_mrr": 0.9,
+      "mean_ndcg_at_5": 0.884,
+      "mean_context_precision": 0.8654
+    },
+    "answer_evaluation": {
+      "mean_exact_match": 0.15,
+      "mean_f1_score": 0.3276,
+      "mean_faithfulness": 0.9202,
+      "mean_answer_relevance": 0.8003
+    }
+  },
+  "detailed_results": [
+    {
+      "id": 1,
+      "question": "What was Acme Corp's total revenue in FY2025?",
+      "expected_answer": "Acme Corporation recorded total gross revenue of $42.5 million in FY2025, representing a 28% year-over-year increase.",
+      "predicted_answer": "Acme Corporation achieved record financial performance in FY2025 with total gross revenue reaching $42.5 million [Source 1 | Document: financial_report.pdf | Page: 1 | Chunk ID: 59bc51fd-eb88-524d-b925-cc2b60e07647].",
+      "target_document": "financial_report.pdf",
+      "retrieved_documents": [
+        "financial_report.pdf",
+        "company_policy.html"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.5714285714285714,
+        "faithfulness": 0.9285714285714286,
+        "answer_relevance": 1.0
+      }
+    },
+    {
+      "id": 2,
+      "question": "What was the revenue growth percentage from FY2024 to FY2025?",
+      "expected_answer": "Gross revenue increased by 28% year-over-year from $33.2 million in FY2024 to $42.5 million in FY2025.",
+      "predicted_answer": "The revenue growth percentage from FY2024 to FY2025 was 28% [Source 1 | Document: financial_report.pdf | Page: 1 | Chunk ID: 59bc51fd-eb88-524d-b925-cc2b60e07647].",
+      "target_document": "financial_report.pdf",
+      "retrieved_documents": [
+        "financial_report.pdf",
+        "company_policy.html"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.45161290322580644,
+        "faithfulness": 0.8571428571428571,
+        "answer_relevance": 1.0
+      }
+    },
+    {
+      "id": 3,
+      "question": "What was Acme Corp's gross profit margin in FY2025?",
+      "expected_answer": "Gross profit margin reached 68.2%, up from 62.4% in FY2024.",
+      "predicted_answer": "Acme Corporation's gross profit margin in FY2025 was 68.2% [Source 1 | Document: financial_report.pdf | Page: 1 | Chunk ID: 59bc51fd-eb88-524d-b925-cc2b60e07647].",
+      "target_document": "financial_report.pdf",
+      "retrieved_documents": [
+        "financial_report.pdf",
+        "company_policy.html"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.5384615384615384,
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0
+      }
+    },
+    {
+      "id": 4,
+      "question": "How much did Acme Corp spend on vector database infrastructure before optimization?",
+      "expected_answer": "Under managed Pinecone pods, vector storage cost $1,450 per month ($17,400 annually), projecting over $180,000 annually at scale.",
+      "predicted_answer": "To determine the amount spent on vector database infrastructure before optimization, we need to look at the costs associated with the managed Pinecone vector database pods. \n\nAccording to Source 1 [financial_report.pdf | Page: 1 | Chunk ID: e382d7e6-77d1-58ca-9a4d-cbe0a31dc6bb], the vector storage cost for managed Pinecone vector database pods was $1,450 per month. \n\nSince we are looking for the total amount spent on vector database infrastructure before optimization, we need to consider the annual cost. The annual cost is $17,400 (Source 1 [financial_report.pdf | Page: 1 | Chunk ID: e382d7e6-77d1-58ca-9a4d-cbe0a31dc6bb]).\n\nTherefore, Acme Corp spent $17,400 on vector database infrastructure before optimization.",
+      "target_document": "financial_report.pdf",
+      "retrieved_documents": [
+        "architecture_guide.md",
+        "financial_report.pdf",
+        "company_policy.html"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 0.8529278650606567,
+        "context_precision": 0.7000000000000001
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.2113821138211382,
+        "faithfulness": 0.4888888888888889,
+        "answer_relevance": 1.0
+      }
+    },
+    {
+      "id": 5,
+      "question": "How much annual cost reduction was achieved by switching to Qdrant?",
+      "expected_answer": "Self-hosted Qdrant achieved a net annual cost reduction of $120,000, representing a 91.4% cost savings.",
+      "predicted_answer": "According to Source 2 [financial_report.pdf | Page: 1 | Chunk ID: 83a47fdb-2c4f-59b3-9503-6533772ffbae], the annual cost reduction achieved by switching to Qdrant was $120,000 [1].",
+      "target_document": "financial_report.pdf",
+      "retrieved_documents": [
+        "architecture_guide.md",
+        "financial_report.pdf"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.3181818181818182,
+        "faithfulness": 0.45454545454545453,
+        "answer_relevance": 1.0
+      }
+    },
+    {
+      "id": 6,
+      "question": "How much was invested in Research and Development in FY2025?",
+      "expected_answer": "Total R&D expenditure for FY2025 was $8.2 million, representing 19.3% of revenue.",
+      "predicted_answer": "$8.2 million [Source 1 | Document: financial_report.pdf | Page: 1 | Chunk ID: 83a47fdb-2c4f-59b3-9503-6533772ffbae]",
+      "target_document": "financial_report.pdf",
+      "retrieved_documents": [
+        "financial_report.pdf",
+        "company_policy.html"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 0.9558295932317544,
+        "context_precision": 0.8875
+      },
+      "answer_metrics": {
+        "exact_match": 1.0,
+        "f1_score": 0.3157894736842105,
+        "faithfulness": 1.0,
+        "answer_relevance": 0.4
+      }
+    },
+    {
+      "id": 7,
+      "question": "What is the monthly remote work stipend for Acme Corp employees?",
+      "expected_answer": "Full-time remote employees receive a monthly stipend of $150 for internet, electricity, and utilities.",
+      "predicted_answer": "The monthly remote work stipend for Acme Corp employees is $150 [Source 1 | Document: company_policy.html | Page: 1 | Chunk ID: 5bb89bac-e066-55b5-9373-85bd30694772].",
+      "target_document": "company_policy.html",
+      "retrieved_documents": [
+        "company_policy.html"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.5,
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0
+      }
+    },
+    {
+      "id": 8,
+      "question": "What is the one-time home office equipment setup budget for new hires?",
+      "expected_answer": "New employees receive a one-time setup allowance of $1,200 upon joining for ergonomic equipment.",
+      "predicted_answer": "The one-time home office equipment setup budget for new hires is $1,200. [Source 1 | Document: company_policy.html | Page: 1 | Chunk ID: 5bb89bac-e066-55b5-9373-85bd30694772]",
+      "target_document": "company_policy.html",
+      "retrieved_documents": [
+        "financial_report.pdf",
+        "company_policy.html"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 0.9674679834891693,
+        "context_precision": 0.9166666666666666
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.5714285714285715,
+        "faithfulness": 0.8181818181818182,
+        "answer_relevance": 1.0
+      }
+    },
+    {
+      "id": 9,
+      "question": "How many annual paid vacation days do employees receive?",
+      "expected_answer": "Full-time employees accrue 22 annual paid vacation days per year.",
+      "predicted_answer": "Full-time employees accrue 22 annual paid vacation days per year, credited semi-monthly. Acme Corp observes 10 corporate paid holidays annually. [Document: company_policy.html, Page: 1, Chunk ID: 1f4564b6-c6f0-582e-9244-3dda8d3ef3d0]",
+      "target_document": "company_policy.html",
+      "retrieved_documents": [
+        "company_policy.html"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 1.0,
+        "f1_score": 0.6666666666666666,
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0
+      }
+    },
+    {
+      "id": 10,
+      "question": "How many dedicated mental health wellness days are provided per year?",
+      "expected_answer": "Employees receive 5 dedicated mental health wellness days per calendar year.",
+      "predicted_answer": "Full-time employees accrue 22 annual paid vacation days per year, credited semi-monthly. Acme Corp observes 10 corporate paid holidays annually. [Document: company_policy.html, Page: 1, Chunk ID: 1f4564b6-c6f0-582e-9244-3dda8d3ef3d0]",
+      "target_document": "company_policy.html",
+      "retrieved_documents": [
+        "architecture_guide.md",
+        "company_policy.html"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.24242424242424246,
+        "faithfulness": 1.0,
+        "answer_relevance": 0.775
+      }
+    },
+    {
+      "id": 11,
+      "question": "What is the annual Learning & Development allowance per technical employee?",
+      "expected_answer": "Technical employees receive an annual L&D grant of $2,500 for conferences and online certifications.",
+      "predicted_answer": "$2,500 [Source 1 | Document: company_policy.html | Page: 1 | Chunk ID: a3b7b18c-10d5-5e6a-9378-cef673ca8edd].",
+      "target_document": "company_policy.html",
+      "retrieved_documents": [
+        "financial_report.pdf",
+        "company_policy.html"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 0.9047172294870751,
+        "context_precision": 0.8041666666666667
+      },
+      "answer_metrics": {
+        "exact_match": 1.0,
+        "f1_score": 0.23529411764705882,
+        "faithfulness": 1.0,
+        "answer_relevance": 0.4
+      }
+    },
+    {
+      "id": 12,
+      "question": "What percentage of health insurance premiums is covered for dependents?",
+      "expected_answer": "Coverage for direct dependents and spouses is 80% employer-subsidized.",
+      "predicted_answer": "Section 4: Health, Dental & Vision Insurance\n\n\nAcme Corp covers 100% of employee premium costs for medical, dental, and vision healthcare plans. Coverage for legal spouses and eligible direct dependents is 80% employer-subsidized. [Document: company_policy.html, Page: 1, Chunk ID: 32370ae3-19d2-5a80-92fc-6bae05fbe24b]",
+      "target_document": "company_policy.html",
+      "retrieved_documents": [
+        "company_policy.html"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.4782608695652174,
+        "faithfulness": 1.0,
+        "answer_relevance": 0.9714285714285714
+      }
+    },
+    {
+      "id": 13,
+      "question": "What embedding model and vector dimension does the system use?",
+      "expected_answer": "The system uses BAAI/bge-small-en-v1.5 producing 384-dimensional dense vectors.",
+      "predicted_answer": "### Core Vector Specifications\n- **Embedding Model**: `BAAI/bge-small-en-v1. 5`\n- **Dense Dimension Size**: 384 dimensions\n- **Distance Metric**: Cosine Similarity (`Distance. [Document: architecture_guide.md, Page: 1, Chunk ID: f8ddf279-fa4f-5bd7-ab44-90133732fc5e]",
+      "target_document": "architecture_guide.md",
+      "retrieved_documents": [
+        "architecture_guide.md"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.47058823529411764,
+        "faithfulness": 1.0,
+        "answer_relevance": 0.9
+      }
+    },
+    {
+      "id": 14,
+      "question": "Which Large Language Model is integrated into the RAG pipeline?",
+      "expected_answer": "The pipeline integrates llama-3.3-70b-versatile via Groq API and Gemini 2.5 Flash.",
+      "predicted_answer": "# High-Performance Cost-Effective RAG Architecture. [Document: architecture_guide.md, Page: 1, Chunk ID: 9f79480c-5de9-5d0f-804b-64d8ca7d33b0]",
+      "target_document": "architecture_guide.md",
+      "retrieved_documents": [
+        "architecture_guide.md"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.0,
+        "faithfulness": 1.0,
+        "answer_relevance": 0.5428571428571429
+      }
+    },
+    {
+      "id": 15,
+      "question": "How does the system guarantee zero vector duplication during ingestion?",
+      "expected_answer": "SHA-256 hashes generated from chunk text and metadata map to UUID v5 IDs; existing IDs in Qdrant are checked and skipped.",
+      "predicted_answer": "## Chapter 3: Idempotent Ingestion Pipeline\nTo eliminate duplicate vector storage and prevent redundant embedding compute, every document chunk passes through a deterministic hashing engine. [Document: architecture_guide.md, Page: 1, Chunk ID: 8bd2c8d7-ec1d-5a1c-bff4-7f1196edb210]",
+      "target_document": "architecture_guide.md",
+      "retrieved_documents": [
+        "architecture_guide.md"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.1333333333333333,
+        "faithfulness": 1.0,
+        "answer_relevance": 0.65
+      }
+    },
+    {
+      "id": 16,
+      "question": "What fields have Qdrant payload indexes established?",
+      "expected_answer": "Payload keyword indexes are established on category, source, and document_name.",
+      "predicted_answer": "## Chapter 2: Vector Storage & Qdrant Tuning\nQdrant is configured in Docker Compose using HNSW (Hierarchical Navigable Small World) graph indexing combined with Scalar Quantization (SQ8) for minimal memory footprint. [Document: architecture_guide.md, Page: 1, Chunk ID: 67517e73-4d43-5547-8e53-475aa28015a3]",
+      "target_document": "architecture_guide.md",
+      "retrieved_documents": [
+        "architecture_guide.md"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.0,
+        "faithfulness": 1.0,
+        "answer_relevance": 0.5666666666666667
+      }
+    },
+    {
+      "id": 17,
+      "question": "What is the target p95 latency for vector retrieval?",
+      "expected_answer": "Target p95 vector retrieval latency is less than 10ms.",
+      "predicted_answer": "Vector Search Latency (p95) is targeted to be < 10ms [Source 1 | Document: architecture_guide.md | Page: 1 | Chunk ID: 32832337-e3f2-5fc5-9fc2-9f6164b5fe3e].",
+      "target_document": "architecture_guide.md",
+      "retrieved_documents": [
+        "architecture_guide.md"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.5555555555555556,
+        "faithfulness": 0.8571428571428571,
+        "answer_relevance": 1.0
+      }
+    },
+    {
+      "id": 18,
+      "question": "What is the target p95 end-to-end latency for the system?",
+      "expected_answer": "Target total end-to-end system latency is less than 1000ms.",
+      "predicted_answer": "## Chapter 5: Latency Targets & Performance SLOs\n- **Query Embedding Latency**: < 15ms (CPU inference with ONNX runtime / SentenceTransformers)\n- **Vector Search Latency (p95)**: < 10ms (Qdrant payload filtering and HNSW retrieval)\n- **Gemini 2. 5 Flash Generation Latency (p95)**: < 800ms\n- **Total System End-to-End Latency Target (p95)**: < 1000ms. [Document: architecture_guide.md, Page: 1, Chunk ID: 32832337-e3f2-5fc5-9fc2-9f6164b5fe3e]",
+      "target_document": "architecture_guide.md",
+      "retrieved_documents": [
+        "architecture_guide.md"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision": 1.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.2909090909090909,
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0
+      }
+    },
+    {
+      "id": 19,
+      "question": "What is the stock ticker symbol for Quantum Dynamics Inc?",
+      "expected_answer": "I don't know based on the provided documents.",
+      "predicted_answer": "## Chapter 2: Vector Storage & Qdrant Tuning\nQdrant is configured in Docker Compose using HNSW (Hierarchical Navigable Small World) graph indexing combined with Scalar Quantization (SQ8) for minimal memory footprint. [Document: architecture_guide.md, Page: 1, Chunk ID: 67517e73-4d43-5547-8e53-475aa28015a3]",
+      "target_document": "none",
+      "retrieved_documents": [
+        "architecture_guide.md",
+        "financial_report.pdf"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 0.0,
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "ndcg_at_k": 0.0,
+        "context_precision": 0.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.0,
+        "faithfulness": 1.0,
+        "answer_relevance": 0.4
+      }
+    },
+    {
+      "id": 20,
+      "question": "Who was the prime minister of Canada in 1995?",
+      "expected_answer": "I don't know based on the provided documents.",
+      "predicted_answer": "### Core Vector Specifications\n- **Embedding Model**: `BAAI/bge-small-en-v1. 5`\n- **Dense Dimension Size**: 384 dimensions\n- **Distance Metric**: Cosine Similarity (`Distance. [Document: architecture_guide.md, Page: 1, Chunk ID: f8ddf279-fa4f-5bd7-ab44-90133732fc5e]",
+      "target_document": "none",
+      "retrieved_documents": [
+        "architecture_guide.md",
+        "financial_report.pdf",
+        "company_policy.html"
+      ],
+      "retrieval_metrics": {
+        "hit_rate": 0.0,
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "ndcg_at_k": 0.0,
+        "context_precision": 0.0
+      },
+      "answer_metrics": {
+        "exact_match": 0.0,
+        "f1_score": 0.0,
+        "faithfulness": 1.0,
+        "answer_relevance": 0.4
+      }
+    }
+  ]
+}
