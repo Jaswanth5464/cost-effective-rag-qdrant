@@ -190,10 +190,10 @@ Ran `python benchmark/latency_benchmark.py`:
 
 | Execution Stage | p50 (ms) | p95 (ms) | Average (ms) |
 | :--- | :--- | :--- | :--- |
-| **Embedding Generation** | `26.45 ms` | `88.12 ms` | `32.10 ms` |
-| **Qdrant Vector Retrieval** | `1.15 ms` | `3.26 ms` | `1.53 ms` |
-| **Groq LLM Generation** | `415.18 ms` | `850.40 ms` | `480.25 ms` |
-| **Total End-to-End Latency** | `442.53 ms` | `940.10 ms` | `513.88 ms` |
+| **Embedding Generation** | `67.97 ms` | `87.72 ms` | `67.04 ms` |
+| **Qdrant Vector Retrieval** | `2.11 ms` | `3.00 ms` | `2.13 ms` |
+| **Groq LLM Generation** | `1668.68 ms` | `7084.65 ms` | `3235.94 ms` |
+| **Total End-to-End Latency** | `1742.07 ms` | `7164.01 ms` | `3305.17 ms` |
 
 ---
 
