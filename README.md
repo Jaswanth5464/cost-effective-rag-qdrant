@@ -195,6 +195,10 @@ Ran `python benchmark/latency_benchmark.py`:
 | **Groq LLM Generation** | `1668.68 ms` | `7084.65 ms` | `3235.94 ms` |
 | **Total End-to-End Latency** | `1742.07 ms` | `7164.01 ms` | `3305.17 ms` |
 
+> [!IMPORTANT]
+> **Key Architectural Takeaway on Outsourced LLM APIs**:
+> Notice that vector retrieval in self-hosted Qdrant takes **only 2.11 ms (<0.2% of total system time)**. In contrast, **outsourced remote LLM API generation accounts for >95% of total end-to-end latency (1,668.68 ms)** due to network transit and token generation decoding. This empirically proves that local vector databases are fast, and remote LLM APIs represent the primary latency bottleneck in RAG pipelines.
+
 ---
 
 ## 💻 Step-by-Step Installation & Execution Guide
